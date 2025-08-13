@@ -113,6 +113,10 @@ header nav ul {
     width: 100%;
 }
 
+header nav ul li:hover {
+    text-decoration: underline;
+}
+
 main {
     margin: 5% 0;
 }
@@ -131,6 +135,7 @@ h2 {
     display: flex;
     gap: 3%;
     justify-content: center;
+    align-items: center;
 }
 
 .content-container img {
@@ -138,6 +143,8 @@ h2 {
     width: 30%;
     height: 30%;
     transform: scaleX(-1);
+    object-fit: cover;
+    display: block;
 }
 
 .text-container {
