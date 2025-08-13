@@ -1,0 +1,151 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* 10. Create a root stacking context */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* 11. Remove list and links styles */
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: rgb(252, 249, 244);
+}
+
+header {
+    padding: 3% 0 0 3%;
+    display: flex;
+    font-family:'Courier New', Courier, monospace;
+}
+
+header .name-container,
+header nav {
+    flex: 1;
+}
+
+header .name-container p {
+    padding: 0 0 0 3%;
+    margin-top: -2%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+main {
+    margin: 5% 0;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 5% 5%;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content-container {
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+}
+
+.content-container img {
+    border-radius: 25px;
+    width: 30%;
+    height: 30%;
+    transform: scaleX(-1);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-container p {
+    text-align: justify;
+}

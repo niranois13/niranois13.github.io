@@ -11,8 +11,10 @@
 
 <body>
     <header>
-        <h1>Nicolas DOYEN</h1>
-        <p>Holberton School Student - C#23 Full Stack</p>
+        <div class="name-container">
+            <h1>Nicolas DOYEN</h1>
+            <p>Holberton School Student - C#23 Full Stack</p>
+        </div>
         <nav aria-label="Main navigation">
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -25,48 +27,41 @@
 
     <main>
         <!-- About Me Section -->
-        <section id="about">
+        <section id="about" class="section-container">
             <h2>About Me</h2>
-            <img src="images/profile.png" alt="Portrait of Nicolas DOYEN" width="200" height="200" />
-            <p>
-                I grew up moving across the west, south, and east of France, 
-                learning to adapt quickly, listen first, and value different 
-                perspectives
-                <br/>
-                For over a decade, I worked in people care and 
-                education—supporting adolescents with disabilities, 
-                coordinating programs for children and seniors, 
-                and helping teams create safe, welcoming spaces.
-                <br/>
-                These experiences shaped my approach: start with empathy, 
-                clarify needs, and build practical, human-centered solutions.
-                <br/>
-                Becoming a parent of two while completing Holberton School 
-                strengthened my bias for ownership and discipline.
-                I balanced an intensive curriculum with family 
-                responsibilities, contributing to a culture of mutual support.
-                This journey also led me to co-create 
-                <strong>careConnect</strong>, a platform 
-                inspired by my wife’s idea and our shared experience in the 
-                medico-social field—connecting people with disabilities to 
-                freelance professionals in a dignified, accessible way.
-                <br>
-                Earlier in my career, I launched an intergenerational program 
-                pairing teens with seniors for projects like story recording, 
-                beginner tech help, and creative workshops. It reduced 
-                isolation, built confidence, and created a genuine sense of 
-                belonging across generations.
-                <br>
-                Today, I bring the discipline of a caregiver, the curiosity of 
-                a self-taught learner, and the builder’s mindset I’ve refined 
-                through software engineering. My goal is to design systems 
-                that help people belong and succeed—by lowering barriers, 
-                clarifying expectations, and amplifying positive connections.
-            </p>
+            <div class="content-container">
+                <img src="images/profile.png" alt="Portrait of Nicolas DOYEN" />
+                <div class="text-container">
+                    <h3>
+                        Hello Visitor!
+                    </h3>
+                    <p>
+                        I'm Nicolas, I'm a web developer.
+                        <br/>
+                        I moved across France, learning to adapt quickly, 
+                        listen first, and value diverse perspectives—skills 
+                        honed over a decade in <strong>care and education</strong>, from 
+                        supporting adolescents with disabilities to creating 
+                        safe, welcoming community spaces.
+                        <br/>
+                        As a parent and Holberton School graduate, I’ve 
+                        strengthened my problem-solving mind, co-creating 
+                        <strong>careConnect</strong> to connect people with 
+                        disabilities to professionals in a dignified, 
+                        accessible way.
+                        <br/>
+                        I bring the <strong>discipline</strong> of a caregiver, 
+                        the <strong>curiosity</strong> of a self-taught 
+                        learner, and the builder’s <strong>mindset</strong> to 
+                        design systems that help people <strong>belong, 
+                        succeed, and thrive</strong>.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!-- Portfolio Section -->
-        <section id="portfolio">
+        <section id="portfolio" class="section-container">
             <h2>Portfolio</h2>
 
             <article>
@@ -82,7 +77,7 @@
         </section>
 
         <!-- Resume Section -->
-        <section id="resume">
+        <section id="resume" class="section-container">
             <h2>Resume</h2>
             <p>
                 <a href="resume.pdf" target="_blank" rel="noopener">View my resume online</a> |
@@ -91,7 +86,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
+        <section id="contact" class="section-container">
             <h2>Contact Me</h2>
             <ul>
                 <li><a href="https://linkedin.com/in/https://www.linkedin.com/in/n-doyen/" target="_blank" rel="noopener">LinkedIn</a></li>
