@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio and resume of [Your Name]" />
+    <title>Nicolas DOYEN - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" /> <!-- Optional external CSS -->
+</head>
+
+<body>
+    <header>
+        <h1>Nicolas DOYEN</h1>
+        <p>Holberton School Student - C#23 Full Stack</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Portrait of [Your Name]" width="200" height="200" />
+            <p>
+                I grew up moving across the west, south, and east of France, 
+                learning to adapt quickly, listen first, and value different 
+                perspectives
+                <br/>
+                For over a decade, I worked in people care and 
+                education—supporting adolescents with disabilities, 
+                coordinating programs for children and seniors, 
+                and helping teams create safe, welcoming spaces.
+                <br/>
+                These experiences shaped my approach: start with empathy, 
+                clarify needs, and build practical, human-centered solutions.
+                <br/>
+                Becoming a parent of two while completing Holberton School 
+                strengthened my bias for ownership and discipline.
+                I balanced an intensive curriculum with family 
+                responsibilities, contributing to a culture of mutual support.
+                This journey also led me to co-create 
+                <strong>careConnect</strong>, a platform 
+                inspired by my wife’s idea and our shared experience in the 
+                medico-social field—connecting people with disabilities to 
+                freelance professionals in a dignified, accessible way.
+                <br>
+                Earlier in my career, I launched an intergenerational program 
+                pairing teens with seniors for projects like story recording, 
+                beginner tech help, and creative workshops. It reduced 
+                isolation, built confidence, and created a genuine sense of 
+                belonging across generations.
+                <br>
+                Today, I bring the discipline of a caregiver, the curiosity of 
+                a self-taught learner, and the builder’s mindset I’ve refined 
+                through software engineering. My goal is to design systems 
+                that help people belong and succeed—by lowering barriers, 
+                clarifying expectations, and amplifying positive connections.
+            </p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+
+            <article>
+                <h3>Project Title 1</h3>
+                <img src="images/project1-screenshot.jpg" alt="Screenshot of Project Title 1" />
+                <p>[Short description of the project and its purpose.]</p>
+                <p>
+                    <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener">View on GitHub</a>
+                    |
+                    <a href="https://your-deployed-app-link.com" target="_blank" rel="noopener">Live Demo</a>
+                </p>
+            </article>
+
+            <article>
+                <h3>Project Title 2</h3>
+                <img src="images/project2-screenshot.jpg" alt="Screenshot of Project Title 2" />
+                <p>[Short description of the project and its purpose.]</p>
+                <p>
+                    <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener">View on GitHub</a>
+                    |
+                    <a href="https://your-deployed-app-link.com" target="_blank" rel="noopener">Live Demo</a>
+                </p>
+            </article>
+
+            <!-- Add more projects as needed -->
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>
+                <a href="resume.pdf" target="_blank" rel="noopener">View my resume online</a> |
+                <a href="resume.pdf" download>Download PDF</a>
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <ul>
+                <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://twitter.com/yourusername" target="_blank" rel="noopener">Twitter</a></li>
+                <!-- Add more social links if you like -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Automatically update the year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
